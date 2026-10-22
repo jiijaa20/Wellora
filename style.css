@@ -71,7 +71,7 @@ header {
     transition: transform 0.3s ease;
 }
 
-.hero{
+.hero, .about{
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -359,6 +359,190 @@ header {
     font-weight: 600;
 }
 
-.about {
+/* about */
 
+.about{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(18, 55, 42, 0.04);
+    border: 1px solid #e5e9e8;
+    padding: 50px 40px;
+}
+
+.about-kiri{
+}
+
+.about-title{
+    font-size: 36px;
+    color: #12372a;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.about-desc{
+    font-size: 15px;
+    color: #52606d;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.value-item{
+    display: flex;
+    gap: 16px;
+    background-color: #f8fcf9;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e9e8;
+    margin-bottom: 18px;
+}
+
+.value-icon{
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #e7f7ee;
+    color: #2ead70;
+    width: 60px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-title{
+    font-weight: 700;
+    font-size: 15px;
+    color: #12372a;
+}
+
+.value-desc{
+    color: #52606d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.box-about-kanan{
+    background-color: #12372a;
+    color: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(18, 55, 42, 0.15);
+
+    width: 400px;
+}
+
+.title-about-kanan{
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.desc-about-kanan{
+    font-size: 13px;
+    color: #cbefdb;
+    margin-bottom: 15px;
+}
+
+.card-about-kanan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 10px
+}
+
+.card-item{
+    background-color: #294b3c;
+    padding: 10px 10px;
+    border-radius: 16px;
+    border: 1px solid #2c6b4c;
+
+    width: 150px;
+}
+
+.card-item:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+.card-title{
+    color: #2ead70;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.card-desc{
+    color: white;
+    font-size: 13px;
+}
+
+.contact{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.top-judul-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-judul-contact{
+    margin-top: 50px;
+}
+
+.judul-contact{
+    color: #12372a;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px;
+}
+
+.desc-contact{
+    color: #737c78;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item{
+    display: flex;
+    gap: 16px;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e9e8;
+    margin-bottom: 18px;
+}
+
+.contact-icon{
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #e7f7ee;
+    color: #2ead70;
+    width: 60px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-contact{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+}
+
+.contact-kanan{
+    background-color: #ffffff;
+    padding: 20px;
+    
 }
