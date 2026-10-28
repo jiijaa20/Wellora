@@ -22,10 +22,10 @@
         <!-- menu  -->
          <nav class="nav-menu">
             <a href="#" class="nav-item active"> Beranda </a>
-            <a href="#" class="nav-item"> Fitur </a>
-            <a href="#" class="nav-item"> Tentang Kami </a>
+            <a href="#feature" class="nav-item"> Fitur </a>
+            <a href="#aboutUs" class="nav-item"> Tentang Kami </a>
             <a href="#" class="nav-item"> Artikel </a>
-            <a href="#" class="nav-item"> Kontak </a>
+            <a href="#contact" class="nav-item"> Kontak </a>
          </nav>
         <!-- tombol -->
          <div class="nav-button">
@@ -64,7 +64,7 @@
 
     </section>
 
-    <section class="second-sec">
+    <section class="second-sec" id="feature">
       <div class="card">
          <span class="card-icon"><i class="fa-solid fa-person-running" aria-hidden="true"></i></span>
          <h3>Program Terpersonalisasi</h3>
@@ -132,7 +132,7 @@
     </section>
 
     <!-- About Us -->
-    <section class="about">
+    <section class="about" id="aboutUs">
       <div class="about-kiri">
          <span class="about-badge">
             <i class="fa-solid fa-leaf"></i> Tentang Wellora
@@ -205,8 +205,8 @@
    </section>
 
    <!-- Edukasi & Inspirasi -->
-   <section>
-      <div class="sub-judul">
+   <section class="edu">
+      <div class="sub-judul-edu">
          <i class="fa-solid fa-book-open"></i>Edukasi & Inspirasi
       </div>
       <div class="edu-judul">
@@ -215,8 +215,10 @@
 
    </section>
 
+   
+
    <!-- Hubungi kami -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="top-judul-contact">
          <div class="sub-judul-contact">
             <i class="fa-solid fa-headset"></i> Hubungi kami
@@ -311,10 +313,60 @@
                   <input type="email" id="" name="" placeholder="Contoh: Pertanyaan seputar fitur">
                   </form>
                </div>
+               <!-- tombol kirim --> 
+                <button type="button" class="button-kirim">Kirim Pesan Sekarang <i class="fa-solid fa-paper-plane"></i></button>
 
             </div>
          </div>
 
     </section>
+    <!-- footer -->
+      <footer>
+         <div class="footer">
+            <div class="container-judul-footer">
+               <div class="judul-footer"><img src="asset/logo wellora.png" alt="icon-wellora" width="40" height="40"><h2>Wellora</h2></div>
+            </div>
+            <div class="desc-footer"><p>Sahabat setia Anda menuju kehidupan yang lebih sehat, aktif, dan seimbang setiap hari.</p></div>
+            <div class="menu-footer">
+               <a href="#" class="menu-item">Beranda</a>
+               <a href="#" class="menu-item">Fitur</a>
+               <a href="#" class="menu-item">Dashboard</a>
+               <a href="#" class="menu-item">Tentang Kami</a>
+               <a href="#" class="menu-item">Artikel</a>
+               <a href="#" class="menu-item">Kontak</a>
+            </div>
+            <hr>
+            <div class="copyright">
+               <div class="desc-copy">@ 2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS flexbox Siswa kelas X RPL</div>
+            </div>
+         </div>
+      </footer>
+
+      <button class="btn-back-to-top" id="btnBackToTop" onclick="keAtasHalaman()">
+         <i class="fa-solid fa-arrow-up"></i>
+      </button>
+
+      <script>
+         window.addEventListener('scroll', function() {
+            // getElementByID : mengambil elemen html yang memiliki id btnBackToTop
+            const btnTop = document.getElementById
+            ('btnBackToTop');
+
+            if(window.scrollY > 300){
+               btnTop.style.display = 'flex';
+            } else {
+               btnTop.style.display = 'none';
+            }
+         });
+
+         function keAtasHalaman(){
+            window.scrollTo({
+               top : 0, behavior: 'smooth'
+               //bergulir halus ke bagian paling atas
+            })
+         }
+
+      </script>
+
 </body>
 </html>
